@@ -39,7 +39,7 @@ public class cricketCoach implements Coach{
 
 	public cricketCoach() {
 
-		System.out.println("Inside of constructor Cricket: ");
+		System.out.println("Inside of constructor CricketCoach: ");
 	}
 	
 	
