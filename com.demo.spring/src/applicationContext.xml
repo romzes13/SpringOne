@@ -23,6 +23,17 @@
 
 	</bean>
     
+	<bean id="myCricketCoach"
+	    class="com.demo.springone.cricketCoach">
+	    
+	    <!-- Setter injection -->
+	    <property name="fortuneService" ref="myFortune"></property>
+	    
+	    <!-- Inject literal values -->
+	    <property name="emailAddress" value="romzes13@gmail.com"/>
+	    <property name="team" value="Tigers roarrr!"/>
+	    
+	</bean>
 	
     
     

@@ -4,9 +4,39 @@ public class cricketCoach implements Coach{
 
 	private FortuneService fortuneService;
 	
+	// Add fields for email address and tea
+	private String emailAddress;
+	private String team;
 	
+	
+	
+	
+	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("Inside of setter method setEmailAddress: ");
+
+		this.emailAddress = emailAddress;
+	}
+
+
+	public String getTeam() {
+		return team;
+	}
+
+
+	public void setTeam(String team) {
+		System.out.println("Inside of setter method setTeam: ");
+
+		this.team = team;
+	}
+
 	// create a no arg constructor
-	
+
 	public cricketCoach() {
 
 		System.out.println("Inside of constructor Cricket: ");
