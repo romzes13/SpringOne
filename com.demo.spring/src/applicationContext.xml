@@ -7,6 +7,10 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!-- Load the properties file -->
+    <context:property-placeholder location="classpath:sport.properties"/>
+    
+    
 	<!-- Define your beans here -->
 	
 	<!-- Define the depandancy -->
@@ -30,8 +34,8 @@
 	    <property name="fortuneService" ref="myFortune"></property>
 	    
 	    <!-- Inject literal values -->
-	    <property name="emailAddress" value="romzes13@gmail.com"/>
-	    <property name="team" value="Tigers roarrr!"/>
+	    <property name="emailAddress" value="${foo.email}"/>
+	    <property name="team" value="${foo.team}"/>
 	    
 	</bean>
 	
